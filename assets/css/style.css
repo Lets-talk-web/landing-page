@@ -78,10 +78,10 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 90px;
+  height: 110px;
   transition: all 0.5s;
   z-index: 997;
-  background: linear-gradient(45deg, #E60965, #F94892);
+  background: #F94892;
 }
 
 #header.header-transparent {
@@ -90,34 +90,15 @@ h6 {
 
 #header.header-scrolled {
   background: linear-gradient(45deg, #E60965, #F94892);
-  height: 90px;
+  height: 110px;
   transition: all 0.5s;
 }
 
-#header #logo h1 {
-  font-size: 36px;
-  padding: 0;
-  margin: 0;
-  display: inline-block;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
-#header #logo h1 a,
-#header #logo h1 a:hover {
-  color: #fff;
-}
 
 @media (max-width: 768px) {
-  #header #logo h1 {
-    font-size: 28px;
-  }
-
   #header #logo img {
-    max-height: 70px;
-    max-width: 60px;
+    max-height: 80px;
+    max-width: 80px;
   }
 }
 
@@ -243,7 +224,7 @@ h6 {
   position: absolute;
   top: 55px;
   right: 15px;
-  bottom: 15px;
+  bottom: 55vh;
   left: 15px;
   padding: 10px 0;
   background-color: #fff;
@@ -286,8 +267,8 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 70vh;
-  background: linear-gradient(45deg, rgba(224, 29, 39, 0.8), rgba(205, 29, 73, 0.8)), url("../img/hero-bg.jpg") center top no-repeat;
+  height: 55vh;
+  background: linear-gradient(45deg, rgba(236, 14, 25, 0.8), rgba(238, 11, 68, 0.8)), url("../img/hero-bg.jpg") center top no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -298,16 +279,11 @@ h6 {
   }
 }
 
-@media (max-height: 640px) {
-  #hero {
-    height: 120vh;
-  }
-}
 
 #hero .hero-text {
   position: absolute;
   left: 0;
-  top: 60px;
+  top: 100px;
   right: 0;
   height: calc(50% - 60px);
   display: flex;
@@ -317,10 +293,11 @@ h6 {
   flex-direction: column;
 }
 
+
 #hero h2 {
-  margin: 30px 0 10px 0;
+  margin: 40px 0 10px 0;
   padding: 0 15px;
-  font-size: 48px;
+  font-size: 45px;
   font-weight: 400;
   line-height: 56px;
   color: #fff;
@@ -328,7 +305,7 @@ h6 {
 
 @media (max-width: 768px) {
   #hero h2 {
-    font-size: 28px;
+    font-size: 35px;
     line-height: 36px;
   }
 }
@@ -337,12 +314,12 @@ h6 {
   color: #fff;
   margin-bottom: 20px;
   padding: 0 15px;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 @media (max-width: 768px) {
   #hero p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     margin-bottom: 20px;
   }
@@ -350,7 +327,7 @@ h6 {
 
 #hero .btn-get-started {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
@@ -367,62 +344,13 @@ h6 {
   background: #fff;
 }
 
-#hero .product-screens {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-  text-align: center;
-  width: 100%;
-  height: 50%;
-}
-
-#hero .product-screens img {
-  box-shadow: 0px -2px 19px 4px rgba(0, 0, 0, 0.29);
-}
-
-#hero .product-screens .product-screen-1 {
-  position: absolute;
-  z-index: 30;
-  left: calc(50% + 54px);
-  bottom: 0;
-  top: 30px;
-}
-
-#hero .product-screens .product-screen-2 {
-  position: absolute;
-  z-index: 20;
-  left: calc(50% - 154px);
-  bottom: 0;
-  top: 90px;
-}
-
-#hero .product-screens .product-screen-3 {
-  position: absolute;
-  z-index: 10;
-  left: calc(50% - 374px);
-  bottom: 0;
-  top: 150px;
-}
-
-@media (max-width: 767px) {
-  #hero .product-screens .product-screen-1 {
-    position: static;
-    padding-top: 30px;
-  }
-
-  #hero .product-screens .product-screen-2,
-  #hero .product-screens .product-screen-3 {
-    display: none;
-  }
-}
-
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
 section {
   overflow: hidden;
+  width: 100%;
+  padding: 0 7vw;
 }
 
 /* Sections Header
@@ -431,7 +359,7 @@ section {
   font-size: 32px;
   color: #111;
   text-align: center;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .section-header .section-description {
@@ -454,7 +382,7 @@ section {
 /* Section with background
 --------------------------------*/
 .section-bg {
-  background: #eff5f5;
+  background: #fafafa;
 }
 
 /*--------------------------------------------------------------
@@ -521,17 +449,16 @@ section {
 /* About Us Section
 --------------------------------*/
 #about {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
   overflow: hidden;
 }
 
 #about .about-img {
   height: 510px;
-  overflow: hidden;
 }
 
 #about .about-img img {
-  margin-left: -15px;
   max-width: 100%;
 }
 
@@ -541,7 +468,6 @@ section {
   }
 
   #about .about-img img {
-    margin-left: 0;
     padding-bottom: 30px;
   }
 }
@@ -583,17 +509,16 @@ section {
   padding-bottom: 10px;
 }
 
-/* Product Featuress Section
+/* Product Features Section
 --------------------------------*/
 #features {
   background: #fff;
-  padding: 60px 0 0 0;
+  padding-top: 60px;
   overflow: hidden;
 }
 
 #features .features-img {
   text-align: center;
-  padding-top: 20px;
 }
 
 @media (min-width: 1000px) {
@@ -653,6 +578,8 @@ section {
 /* Product Advanced Featuress Section
 --------------------------------*/
 #advanced-features {
+  margin: auto;
+  padding: 0 5vw;
   overflow: hidden;
 }
 
@@ -713,7 +640,9 @@ section {
 
   #advanced-features .advanced-feature-img-right,
   #advanced-features .advanced-feature-img-left {
-    max-width: 50%;
+    max-width: 70%;
+    display: block;
+    margin: auto;
   }
 }
 
@@ -931,52 +860,6 @@ section {
 #team .member .social i {
   font-size: 18px;
   margin: 0 2px;
-}
-
-/* Gallery Section
---------------------------------*/
-#gallery {
-  background: #fff;
-  padding: 60px 0 0 0;
-  overflow: hidden;
-}
-
-#gallery .container-fluid {
-  padding: 0px;
-}
-
-#gallery .gallery-overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  transition: all ease-in-out 0.4s;
-}
-
-#gallery .gallery-item {
-  overflow: hidden;
-  position: relative;
-  padding: 0;
-  vertical-align: middle;
-  text-align: center;
-}
-
-#gallery .gallery-item img {
-  transition: all ease-in-out 0.4s;
-  width: 100%;
-}
-
-#gallery .gallery-item:hover img {
-  transform: scale(1.1);
-}
-
-#gallery .gallery-item:hover .gallery-overlay {
-  opacity: 1;
-  background: rgba(0, 0, 0, 0.7);
 }
 
 /* Contact Section
