@@ -1,13 +1,17 @@
 body {
   background: #fff;
   color: #666666;
+
   font-family: "Open Sans", sans-serif;
+
   overflow-x: hidden;
 }
 
 a {
   color: #E60965;
+
   text-decoration: none;
+
   transition: 0.5s;
 }
 
@@ -15,6 +19,7 @@ a:hover,
 a:active,
 a:focus {
   color: #1dc9ce;
+
   outline: none;
   text-decoration: none;
 }
@@ -32,6 +37,7 @@ h5,
 h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+
   margin: 0 0 20px 0;
   padding: 0;
 }
@@ -41,16 +47,18 @@ h6 {
 --------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
-  background: linear-gradient(45deg, #E60965, #F94892);
-  color: #fff;
   border-radius: 4px 4px 0 0;
   right: 15px;
   bottom: 0;
+  width: 64px;
+  height: 34px;
+
+  background: linear-gradient(45deg, #E60965, #F94892);
+  color: #fff;
+
   transition: none;
   visibility: hidden;
   opacity: 0;
-  width: 64px;
-  height: 34px;
 }
 
 .back-to-top i {
@@ -61,6 +69,7 @@ h6 {
 .back-to-top:focus {
   background: linear-gradient(45deg, #E60965, #F94892);
   color: #fff;
+
   outline: none;
 }
 
@@ -79,8 +88,10 @@ h6 {
 --------------------------------------------------------------*/
 #header {
   height: 110px;
+
   transition: all 0.5s;
   z-index: 997;
+
   background: #F94892;
 }
 
@@ -90,7 +101,9 @@ h6 {
 
 #header.header-scrolled {
   background: linear-gradient(45deg, #E60965, #F94892);
+
   height: 110px;
+
   transition: all 0.5s;
 }
 
@@ -115,7 +128,9 @@ h6 {
 .navbar ul {
   margin: 0;
   padding: 0;
+
   display: flex;
+
   list-style: none;
   align-items: center;
 }
@@ -134,20 +149,25 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   font-family: "Montserrat", sans-serif;
-  color: rgba(255, 255, 255, 0.8);
   font-size: 15px;
+  letter-spacing: 0.4px; 
+
+  color: rgba(255, 255, 255, 0.8);
+  
   padding: 0 2px;
-  white-space: nowrap;
-  transition: 0.3s;
-  letter-spacing: 0.4px;
   position: relative;
+
+  white-space: nowrap;
+  transition: 0.3s; 
 }
 
 .navbar a i,
 .navbar a:focus i {
   font-size: 12px;
   line-height: 0;
+
   margin-left: 5px;
 }
 
@@ -158,7 +178,9 @@ h6 {
   height: 2px;
   bottom: -8px;
   left: 0;
+
   background-color: #fff;
+
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
@@ -184,10 +206,13 @@ h6 {
 */
 .mobile-nav-toggle {
   color: #fff;
+
   font-size: 28px;
+  line-height: 0;
+
   cursor: pointer;
   display: none;
-  line-height: 0;
+  
   transition: 0.5s;
 }
 
@@ -208,7 +233,9 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
+
   background: rgba(26, 26, 26, 0.9);
+
   transition: 0.3s;
   z-index: 999;
 }
@@ -227,7 +254,9 @@ h6 {
   bottom: 55vh;
   left: 15px;
   padding: 10px 0;
+
   background-color: #fff;
+
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -245,7 +274,9 @@ h6 {
 .navbar-mobile a,
 .navbar-mobile a:focus {
   padding: 10px 20px;
+
   font-size: 15px;
+
   color: #333333;
 }
 
@@ -268,9 +299,10 @@ h6 {
 #hero {
   width: 100%;
   height: 55vh;
-  background: linear-gradient(45deg, rgba(236, 14, 25, 0.8), rgba(238, 11, 68, 0.8)), url("../img/hero-bg.jpg") center top no-repeat;
-  background-size: cover;
   position: relative;
+
+  background: linear-gradient(45deg, rgba(236, 14, 25, 0.8), rgba(238, 11, 68, 0.8)), url("../img/hero-bg.jpg") center top no-repeat;
+  background-size: cover; 
 }
 
 @media (min-width: 1025px) {
@@ -286,20 +318,24 @@ h6 {
   top: 100px;
   right: 0;
   height: calc(50% - 60px);
+
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   flex-direction: column;
+
+  text-align: center;
 }
 
 
 #hero h2 {
   margin: 40px 0 10px 0;
   padding: 0 15px;
+
   font-size: 45px;
   font-weight: 400;
   line-height: 56px;
+
   color: #fff;
 }
 
@@ -312,8 +348,10 @@ h6 {
 
 #hero p {
   color: #fff;
+
   margin-bottom: 20px;
   padding: 0 15px;
+
   font-size: 22px;
 }
 
@@ -321,6 +359,7 @@ h6 {
   #hero p {
     font-size: 16px;
     line-height: 24px;
+
     margin-bottom: 20px;
   }
 }
@@ -330,12 +369,16 @@ h6 {
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 1px;
+
   display: inline-block;
-  padding: 8px 28px;
-  border-radius: 50px;
   transition: 0.5s;
+
+  padding: 8px 28px;
   margin: 10px;
+
+  border-radius: 50px;
   border: 2px solid #fff;
+  
   color: #fff;
 }
 
@@ -349,6 +392,7 @@ h6 {
 --------------------------------------------------------------*/
 section {
   overflow: hidden;
+
   width: 100%;
   padding: 0 7vw;
 }
@@ -364,19 +408,21 @@ section {
 
 .section-header .section-description {
   text-align: center;
-  padding-bottom: 40px;
   color: #777;
   font-style: italic;
+
+  padding-bottom: 40px;
 }
 
 .section-header .section-divider {
   display: block;
   width: 60px;
   height: 3px;
-  background: #E60965;
-  background: linear-gradient(0deg, #E60965 0%, #F94892 100%);
   margin: 0 auto;
   margin-bottom: 20px;
+
+  background: #E60965;
+  background: linear-gradient(0deg, #E60965 0%, #F94892 100%);
 }
 
 /* Section with background
@@ -403,6 +449,7 @@ section {
 .breadcrumbs h2 {
   font-size: 24px;
   font-weight: 300;
+
   margin: 0;
 }
 
@@ -416,8 +463,10 @@ section {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+
   padding: 0;
   margin: 0;
+
   font-size: 14px;
 }
 
@@ -427,9 +476,10 @@ section {
 
 .breadcrumbs ol li+li::before {
   display: inline-block;
-  padding-right: 10px;
-  color: #6c757d;
   content: "/";
+
+  padding-right: 10px;
+  color: #6c757d; 
 }
 
 @media (max-width: 768px) {
@@ -497,11 +547,13 @@ section {
 #about .content i {
   font-size: 20px;
   padding-right: 4px;
+
   color: #E60965;
 }
 
 #about .content ul {
   list-style: none;
+
   padding: 0;
 }
 
@@ -513,7 +565,9 @@ section {
 --------------------------------*/
 #features {
   background: #fff;
+
   padding-top: 60px;
+
   overflow: hidden;
 }
 
@@ -534,6 +588,7 @@ section {
 
 #features .box {
   margin-bottom: 15px;
+
   text-align: center;
 }
 
@@ -544,6 +599,7 @@ section {
 #features .icon i {
   color: #666666;
   font-size: 40px;
+
   transition: 0.5s;
 }
 
@@ -557,8 +613,9 @@ section {
 
 #features .title {
   font-weight: 300;
-  margin-bottom: 15px;
   font-size: 22px;
+
+  margin-bottom: 15px;
 }
 
 #features .title a {
@@ -568,6 +625,7 @@ section {
 #features .description {
   font-size: 14px;
   line-height: 24px;
+
   margin-bottom: 10px;
 }
 
@@ -580,6 +638,7 @@ section {
 #advanced-features {
   margin: auto;
   padding: 0 5vw;
+
   overflow: hidden;
 }
 
@@ -604,16 +663,19 @@ section {
 #advanced-features p {
   line-height: 24px;
   color: #777;
+
   margin-bottom: 30px;
 }
 
 #advanced-features i {
   color: #666666;
   font-size: 64px;
+  line-height: 1;
+
   transition: 0.5s;
   float: left;
+
   padding: 0 15px 0px 0;
-  line-height: 1;
 }
 
 #advanced-features i:before {
@@ -627,12 +689,14 @@ section {
 #advanced-features .advanced-feature-img-right {
   max-width: 100%;
   float: right;
+
   padding: 0 0 30px 30px;
 }
 
 #advanced-features .advanced-feature-img-left {
   max-width: 100%;
   float: left;
+
   padding: 0 30px 30px 0;
 }
 
@@ -642,6 +706,7 @@ section {
   #advanced-features .advanced-feature-img-left {
     max-width: 70%;
     display: block;
+
     margin: auto;
   }
 }
@@ -652,6 +717,7 @@ section {
   #advanced-features .advanced-feature-img-left {
     max-width: 100%;
     float: none;
+
     padding: 0 0 30px 0;
   }
 }
@@ -660,16 +726,19 @@ section {
 --------------------------------*/
 #more-features {
   padding: 60px 0 60px 0;
+
   overflow: hidden;
 }
 
 #more-features .box {
   padding: 40px;
   margin-bottom: 30px;
+
   box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
-  background: #fff;
   transition: 0.4s;
   height: 100%;
+
+  background: #fff;
 }
 
 #more-features .icon {
@@ -679,8 +748,9 @@ section {
 #more-features .icon i {
   color: #666666;
   font-size: 80px;
-  transition: 0.5s;
   line-height: 0;
+
+  transition: 0.5s;
 }
 
 #more-features .icon i:before {
@@ -693,8 +763,9 @@ section {
 
 #more-features h4 {
   margin-left: 100px;
-  font-weight: 700;
   margin-bottom: 15px;
+
+  font-weight: 700;
   font-size: 18px;
 }
 
@@ -703,9 +774,10 @@ section {
 }
 
 #more-features p {
-  font-size: 14px;
   margin-left: 100px;
   margin-bottom: 0;
+
+  font-size: 14px;
   line-height: 24px;
 }
 
@@ -714,15 +786,17 @@ section {
     margin-bottom: 20px;
   }
 
-  #more-features .icon {
-    float: none;
+  #more-features .icon { 
     text-align: center;
+
+    float: none;
     padding-bottom: 15px;
   }
 
   #more-features h4,
   #more-features p {
     margin-left: 0;
+
     text-align: center;
   }
 }
@@ -731,7 +805,9 @@ section {
 --------------------------------*/
 #clients {
   padding: 30px 0;
+
   background: #fff;
+
   overflow: hidden;
 }
 
@@ -739,6 +815,7 @@ section {
   max-width: 100%;
   opacity: 0.5;
   transition: 0.3s;
+
   padding: 15px 0;
 }
 
@@ -750,6 +827,7 @@ section {
 --------------------------------*/
 #faq {
   padding: 60px 0;
+
   overflow: hidden;
 }
 
@@ -815,16 +893,19 @@ section {
 --------------------------------*/
 #team {
   padding: 60px 0;
+
   overflow: hidden;
 }
 
 #team .member {
   text-align: center;
+
   margin-bottom: 20px;
 }
 
 #team .member .pic {
   margin-bottom: 15px;
+
   overflow: hidden;
   height: 260px;
 }
@@ -835,14 +916,16 @@ section {
 
 #team .member h4 {
   font-weight: 700;
-  margin-bottom: 2px;
   font-size: 18px;
+
+  margin-bottom: 2px;
 }
 
 #team .member span {
   font-style: italic;
-  display: block;
   font-size: 13px;
+
+  display: block;
 }
 
 #team .member .social {
@@ -859,6 +942,7 @@ section {
 
 #team .member .social i {
   font-size: 18px;
+
   margin: 0 2px;
 }
 
@@ -866,20 +950,22 @@ section {
 --------------------------------*/
 #contact {
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  padding: 60px 0;
   overflow: hidden;
+
+  padding: 60px 0;
 }
 
 #contact .contact-about h3 {
   font-size: 36px;
-  margin: 0 0 10px 0;
-  padding: 0;
   line-height: 1;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #E60965;
+
+  margin: 0 0 10px 0;
+  padding: 0; 
 }
 
 #contact .contact-about p {
@@ -897,8 +983,10 @@ section {
   font-size: 18px;
   background: #fff;
   color: #E60965;
+
   padding: 8px 0;
   margin-right: 4px;
+
   border-radius: 50%;
   width: 36px;
   height: 36px;
@@ -931,32 +1019,40 @@ section {
 
 #contact .info p {
   padding: 0 0 10px 42px;
+
   line-height: 28px;
   font-size: 14px;
 }
 
 #contact .php-email-form .error-message {
   display: none;
+
   color: #fff;
   background: #ed3c0d;
   text-align: center;
-  padding: 15px;
   font-weight: 600;
+
+  padding: 15px;
 }
 
 #contact .php-email-form .sent-message {
   display: none;
+
   color: #fff;
-  background: #18d26e;
+  background: red;
   text-align: center;
-  padding: 15px;
   font-weight: 600;
+
+  padding: 15px; 
 }
 
 #contact .php-email-form .loading {
   display: none;
+
   background: #fff;
+
   text-align: center;
+
   padding: 15px;
 }
 
@@ -966,17 +1062,16 @@ section {
   border-radius: 50%;
   width: 24px;
   height: 24px;
+  border: 3px solid red;
+
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
 }
 
 #contact .php-email-form input,
 #contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
+
   font-size: 14px;
 }
 
@@ -987,10 +1082,12 @@ section {
 
 #contact .php-email-form button[type=submit] {
   background: linear-gradient(45deg, #1de099, #E60965);
+  color: #fff;
+
   border: 0;
   border-radius: 20px;
+
   padding: 8px 30px;
-  color: #fff;
 }
 
 #contact .php-email-form button[type=submit]:hover {
@@ -1023,8 +1120,10 @@ section {
 #footer {
   background: #fff;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+
   padding: 30px 0;
   color: #333;
+
   font-size: 14px;
 }
 
@@ -1035,6 +1134,7 @@ section {
 
 #footer .footer-links a {
   color: #666;
+  
   padding-left: 15px;
 }
 
