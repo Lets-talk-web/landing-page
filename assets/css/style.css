@@ -1,5 +1,5 @@
 
-#d1908e   #d11919
+pink   #d11919
 
 body {
   color: #666666;
@@ -11,7 +11,7 @@ body {
 }
 
 a {
-  color: #d1908e;
+  color: pink;
   text-decoration: none;
 
   transition: 0.5s;
@@ -20,7 +20,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #d1908e;
+  color: pink;
   text-decoration: none;
 
   outline: none;
@@ -61,7 +61,7 @@ h6 {
 
   border-radius: 4px 4px 0 0;
 
-  background: linear-gradient(45deg, #d1908e, #d1908e);
+  background: linear-gradient(45deg, pink, pink);
   
   opacity: 0;
   transition: none;
@@ -75,7 +75,7 @@ h6 {
 .back-to-top:focus {
   color: #fff;
 
-  background: linear-gradient(45deg, #d1908e, #d1908e);
+  background: linear-gradient(45deg, pink, pink);
   outline: none;
 }
 
@@ -99,7 +99,7 @@ h6 {
 
   height: 110px;
 
-  background: #d1908e;
+  background: pink;
 
   transition: all 0.5s;
 }
@@ -111,7 +111,7 @@ h6 {
 #header.header-scrolled {
   height: 110px;
 
-  background: linear-gradient(45deg, #d1908e, #d1908e);
+  background: linear-gradient(45deg, pink, pink);
 
   transition: all 0.5s;
 }
