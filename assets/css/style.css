@@ -1038,8 +1038,11 @@ section {
 #contact .php-email-form input,
 #contact .php-email-form textarea {
   font-size: 14px;
+  color: whitesmoke;
   
-  border-radius: 0;
+  border-radius: 8px;
+  border: 5px solid black;
+  background-color: #333;
   box-shadow: none;
 }
 
@@ -1102,8 +1105,12 @@ section {
   color: #808080;
 }
 
+#contact .footer-links {
+  float: right;
+}
+
 #contact .footer-links a {
-  padding-left: 15px;
+  padding-left: 25px;
 
   color: #808080; 
 }
@@ -1114,4 +1121,10 @@ section {
 
 #contact .footer-links a:hover {
   color: #d11919;
+}
+
+@media (max-width: 1000px) {
+  #contact .footer-links {
+    float: none;
+  }
 }
